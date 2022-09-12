@@ -1,6 +1,7 @@
 package com.leviancode.android.infotextest.data.repositories.impl
 
 import android.util.Log
+import com.leviancode.android.infotextest.BuildConfig
 import com.leviancode.android.infotextest.data.api.Endpoints
 import com.leviancode.android.infotextest.data.api.WeatherService
 import com.leviancode.android.infotextest.data.entities.location.CoordinatesData
@@ -20,7 +21,7 @@ class WeatherRepositoryImpl @Inject constructor(
                 lat = coordinates.lat.toString(),
                 lon = coordinates.lon.toString(),
                 units = units.value,
-                appId = Endpoints.API_KEY
+                appId = BuildConfig.OPEN_WEATHER_API_KEY
             ).mapToSimpleWeather()
         }.onFailure {
             Log.e(TAG, "Failed to fetch current weather", it)
