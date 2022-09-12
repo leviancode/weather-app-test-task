@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "341072832544",
+    "project_id": "infotex-weather",
+    "storage_bucket": "infotex-weather.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:341072832544:android:8d0efb28eb481255bd3445",
+        "android_client_info": {
+          "package_name": "com.leviancode.android.infotextest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "341072832544-lisqtd6kaqpu2i9o503ga7qmgdcqaqgm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdF2hETjG0RSM1IuryzK2hMKpcJCs_wTo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "341072832544-lisqtd6kaqpu2i9o503ga7qmgdcqaqgm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

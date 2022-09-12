@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragment_city_list">
+
+    <fragment
+        android:id="@+id/fragment_city_list"
+        android:name="com.leviancode.android.infotextest.ui.screens.city_list.CityListFragment"
+        tools:layout="@layout/fragment_city_list">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/fragment_city_weather" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_city_weather"
+        android:name="com.leviancode.android.infotextest.ui.screens.city_weather.CityWeatherFragment"
+        tools:layout="@layout/fragment_city_weather">
+        <argument
+            android:name="city"
+            app:argType="com.leviancode.android.infotextest.ui.entities.location.CityUI" />
+    </fragment>
+</navigation>
